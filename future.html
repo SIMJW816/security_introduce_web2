@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>미래 보안</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f7fa;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 60px 0 30px;
+      text-align: center;
+      border-bottom: 5px solid #3498db;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #ecf0f1;
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #3498db;
+      color: #ffffff;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-left: 8px solid #3498db;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 25px;
+      margin-bottom: 40px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .card img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      margin-top: 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 60px 0 30px;
+      color: #777;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>미래의 정보 보안</h1>
+    <nav>
+      <a href="intro.html">1. 자기소개</a>
+      <a href="security.html">2. 보안이란?</a>
+      <a href="attack.html">3. 공격 사례</a>
+      <a href="future.html">4. 미래 보안</a>
+      <a href="career.html">5. 보안 관련 직업</a>
+    </nav>
+  </header>
+
+  <section>
+    <div class="card">
+      <img src="../images/future_ai.jpg" alt="AI 보안">
+      <div class="content">
+        <h2>1. 인공지능(AI) 기반 보안</h2>
+        <p>인공지능은 이상 행동 탐지와 자동 대응을 통해 보안 효율을 획기적으로 높입니다. AI는 비정상적인 로그인 시도나 이상한 트래픽을 빠르게 감지해 사이버 공격과 데이터 유출에 더 효과적으로 대처할 수 있습니다.</p>
+        <p>하지만 AI 역시 공격 대상이 될 수 있습니다. 데이터 조작이나 AI 모델을 악용하는 새로운 유형의 위협이 등장하고 있어 이에 대한 대응도 필요합니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/future_quantum.jpg" alt="양자 보안">
+      <div class="content">
+        <h2>2. 양자암호와 양자보안</h2>
+        <p>양자 컴퓨터는 기존 암호를 빠르게 해독할 수 있어 보안의 새로운 위협 요소입니다. 이를 해결하기 위해 '양자 내성 암호' 기술이 개발되고 있습니다.</p>
+        <p>또한 양자 암호화는 자연 발생적이고 불변하는 양자역학 법칙을 기반으로 보안 데이터를 암호화하고 전송하는 다양한 사이버 보안 방법을 말합니다. 이론적으로도 해킹이 불가능합니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/future_zerotrust.avif" alt="제로 트러스트 보안">
+      <div class="content">
+        <h2>3. 제로 트러스트 보안 모델</h2>
+        <p>제로 트러스트는 네트워크 내부의 모든 사용자, 구성요소, 기기를 신뢰하지 않고, 항상 엄격한 인증과 검증을 거치는 보안 모델입니다. 특히 원격근무나 클라우드 환경에서 필수적입니다.</p>
+        <p>사용자와 디바이스의 상태를 지속적으로 확인하며 최소 권한 원칙을 적용하는 방식이 보안 침해 가능성을 낮춰줍니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/future_cti.png" alt="사이버 위협 인텔리전스">
+      <div class="content">
+        <h2>4. 사이버 위협 인텔리전스(CTI)</h2>
+        <p>CTI는 해커의 활동, 악성코드, 공격 IP 등을 분석해 사전에 위협을 예방하고 이에 대응하기 위한 기술입니다. 국가나 대기업 보안 센터에서 활용됩니다.</p>
+        <p>AI 기반 CTI 시스템은 실시간 데이터를 분석해 위협을 예측하고 자동으로 대응할 수 있어, 미래의 지능형 보안 시스템의 핵심입니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/future_user.jpg" alt="사용자 보안 교육">
+      <div class="content">
+        <h2>5. 사용자 인식 및 보안 교육</h2>
+        <p>사람은 보안에서 가장 약한 고리입니다. 피싱 메일, 사회공학적 기법 등은 대부분 사용자의 실수를 노립니다.</p>
+        <p>따라서 미래에는 기술뿐 아니라 사람 중심의 보안 인식과 교육이 함께 이루어져야 보안 체계가 완성됩니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>
+      <a href="intro.html">1</a>
+      <a href="security.html">2</a>
+      <a href="attack.html">3</a>
+      <a href="future.html">4</a>
+      <a href="career.html">5</a>
+    </b></p>
+    <p>© 2025 재욱의 웹페이지</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>보안이란?</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f7fa;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 60px 0 30px;
+      text-align: center;
+      border-bottom: 5px solid #3498db;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #ecf0f1;
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #3498db;
+      color: #ffffff;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-left: 8px solid #3498db;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 25px;
+      margin-bottom: 40px;
+    }
+
+    img {
+      border-radius: 8px;
+      max-width: 100%;
+    }
+
+    h2, h3 {
+      font-family: 'Playfair Display', serif;
+      color: #2c3e50;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 60px 0 30px;
+      color: #777;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>정보 보안</h1>
+    <nav>
+      <a href="intro.html">1. 자기소개</a>
+      <a href="security.html">2. 보안이란?</a>
+      <a href="attack.html">3. 공격 사례</a>
+      <a href="future.html">4. 미래 보안</a>
+      <a href="career.html">5. 보안 관련 직업</a>
+    </nav>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>보안이란?</h2>
+      <p>정보 보안은 중요한 정보의 공개, 변경, 파괴를 초래하는 무단 엑세스 또는 데이터 유출 등의 위협으로부터 데이터 및 정보 시스템을 보호하는 행위입니다. 해킹, 바이러스, 무단 접근 등으로부터 데이터를 지키는 것이 핵심입니다.</p>
+      <div style="text-align:center; margin: 30px 0;">
+        <img src="../images/security.jpg" alt="보안 개념 이미지">
+        <p>정보 보안은 우리의 데이터를 안전하게 지켜줍니다.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <table width="100%">
+        <tr>
+          <td valign="top" width="33%">
+            <h3>🔒 정보보안의 3대 요소</h3>
+            <ul>
+              <li><b>기밀성</b>: 허가받지 않은 사람은 정보를 볼 수 없게 함</li>
+              <li><b>무결성</b>: 정보가 변경되거나 손상되지 않도록 보장</li>
+              <li><b>가용성</b>: 정보와 시스템을 필요한 사람이 원할 때 접근할 수 있게 보장</li>
+            </ul>
+          </td>
+          <td valign="top" width="33%">
+            <h3>⚠️ 주요 위협 요소</h3>
+            <ul>
+              <li><b>해킹(Hacking)</b>: 시스템 취약점을 이용한 불법 접근</li>
+              <li><b>피싱(Phishing)</b>: 가짜 이메일이나 사이트로 개인정보 유출</li>
+              <li><b>악성코드(Malware)</b>: 바이러스, 랜섬웨어 등 시스템을 해치는 소프트웨어</li>
+              <li><b>사회공학(Social Engineering)</b>: 사람을 속여 정보를 얻는 기법</li>
+            </ul>
+          </td>
+          <td valign="top" width="33%">
+            <h3>🧑‍💻 정보보안을 위한 기술</h3>
+            <ul>
+              <li><b>암호화(Encryption)</b>: 데이터를 암호화하여 외부 노출 시에도 내용을 숨김</li>
+              <li><b>방화벽(Firewall)</b>: 외부 네트워크로부터 내부 네트워크를 보호</li>
+              <li><b>IDS/IPS</b>: 침입을 탐지하거나 차단하는 시스템</li>
+              <li><b>백신 소프트웨어</b>: 바이러스, 악성코드 탐지 및 제거</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>
+      <a href="intro.html">1</a>
+      <a href="security.html">2</a>
+      <a href="attack.html">3</a>
+      <a href="future.html">4</a>
+      <a href="career.html">5</a>
+    </b></p>
+    <p>© 2025 재욱의 웹페이지</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>공격 사례</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f7fa;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 60px 0 30px;
+      text-align: center;
+      border-bottom: 5px solid #3498db;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #ecf0f1;
+      font-weight: 600;
+      font-size: 1.05rem;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #3498db;
+      color: #ffffff;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-left: 8px solid #3498db;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 25px;
+      margin-bottom: 40px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .card img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      margin-top: 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 60px 0 30px;
+      color: #777;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>사이버 공격 사례</h1>
+    <nav>
+      <a href="intro.html">1. 자기소개</a>
+      <a href="security.html">2. 보안이란?</a>
+      <a href="attack.html">3. 공격 사례</a>
+      <a href="future.html">4. 미래 보안</a>
+      <a href="career.html">5. 보안 관련 직업</a>
+    </nav>
+  </header>
+
+  <section>
+    <div class="card">
+      <img src="../images/sonny.jpg" alt="소니 픽처스 해킹">
+      <div class="content">
+        <h2>1. 소니 픽처스 해킹 사건 (2014)</h2>
+        <ul>
+          <li><strong>원인:</strong> 북한을 풍자한 영화 "인터뷰" 제작 → 관련 해커 그룹 "Guardians of Peace"의 보복성 해킹</li>
+          <li><strong>피해:</strong> 미공개 영화 유출, 직원 개인정보 및 이메일 유출, 회사 시스템 마비</li>
+          <li><strong>결과:</strong> 수천억 원 피해, 글로벌 사이버보안 경각심 증가</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/wannacry.jpg" alt="워너크라이">
+      <div class="content">
+        <h2>2. 워너크라이 랜섬웨어 (2017)</h2>
+        <ul>
+          <li><strong>전파 방식:</strong> 윈도우의 SMB 취약점(ETERNALBLUE)을 활용</li>
+          <li><strong>피해:</strong> 전 세계 150개국, 23만여 대 컴퓨터 감염. 병원, 은행 등 마비</li>
+          <li><strong>결과:</strong> 보안 패치와 업데이트의 중요성 부각</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/kakao_fire.jpg" alt="카카오 데이터센터 화재">
+      <div class="content">
+        <h2>3. 카카오 데이터센터 화재 (2022)</h2>
+        <ul>
+          <li><strong>피해:</strong> 카카오톡, 페이, 택시, 맵 등 서비스 전면 중단</li>
+          <li><strong>이슈:</strong> 단일 IDC 의존, 이중화 미비, 백업체계 부족</li>
+          <li><strong>결과:</strong> 민간 플랫폼 의존성 문제, 디지털 인프라 보안 재조명</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>
+      <a href="intro.html">1</a>
+      <a href="security.html">2</a>
+      <a href="attack.html">3</a>
+      <a href="future.html">4</a>
+      <a href="career.html">5</a>
+    </b></p>
+    <p>© 2025 재욱의 웹페이지</p>
+  </footer>
+</body>
+</html>

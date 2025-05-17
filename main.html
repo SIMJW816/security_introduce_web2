@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>재욱의 웹페이지</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+    #musicFrame {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      border: none;
+      z-index: 1000;
+    }
+    #contentFrame {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 80px);
+      border: none;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="./sub/music.html" id="musicFrame" name="musicFrame" scrolling="no"></iframe>
+  <iframe src="./sub/intro.html" id="contentFrame" name="contentFrame"></iframe>
+</body>
+</html>

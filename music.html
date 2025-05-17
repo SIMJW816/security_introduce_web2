@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>음악 플레이어</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #90caf9);
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      overflow: hidden;
+    }
+
+    audio {
+      width: 90%;
+      max-width: 300px;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <audio controls autoplay loop>
+    <source src="../images/jazz.mp3" type="audio/mp3">
+    브라우저가 오디오 태그를 지원하지 않습니다.
+  </audio>
+</body>
+</html>
